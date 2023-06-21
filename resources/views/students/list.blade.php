@@ -71,7 +71,6 @@
                                         </td>
                                         <td>{{$student->student->first_name}}</td>
                                         <td>{{$student->student->last_name}}</td>
-                                        <td>{{$student->student->email}}</td>
                                         <td>{{$student->student->phone}}</td>
                                         <td>
                                             <div class="btn-group" role="group">

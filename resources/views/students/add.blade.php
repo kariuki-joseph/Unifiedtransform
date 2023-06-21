@@ -36,7 +36,6 @@
                                 </div>
                                 <div class="col-md-6">
                                     <label for="inputEmail4" class="form-label">Email<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
-                                    <input type="email" class="form-control" id="inputEmail4" name="email" required value="{{old('email')}}">
                                 </div>
                                 <div class="col-md-6">
                                     <label for="inputPassword4" class="form-label">Password<sup><i class="bi bi-asterisk text-primary"></i></sup></label>

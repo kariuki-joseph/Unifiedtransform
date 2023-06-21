@@ -34,7 +34,6 @@
                                 </div>
                                 <div class="col-3">
                                     <label for="inputEmail4" class="form-label">Email<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
-                                    <input type="email" class="form-control" id="inputEmail4" name="email" required value="{{$student->email}}">
                                 </div>
                                 <div class="col-3">
                                     <label for="inputBirthday" class="form-label">Birthday<sup><i class="bi bi-asterisk text-primary"></i></sup></label>

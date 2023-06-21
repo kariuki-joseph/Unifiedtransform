@@ -59,7 +59,6 @@
                                             </tr>
                                             <tr>
                                                 <th scope="row">Email:</th>
-                                                <td>{{$student->email}}</td>
                                                 <th>Birthday:</th>
                                                 <td>{{$student->birthday}}</td>
                                             </tr>
