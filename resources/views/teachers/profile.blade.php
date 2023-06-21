@@ -71,7 +71,7 @@
                                             </tr>
                                             <tr>
                                                 <th scope="row">City:</th>
-                                                <td>{{$teacher->city}}</td>
+                                                <td>{{$teacher->county}}</td>
                                                 <th>Zip:</th>
                                                 <td>{{$teacher->zip}}</td>
                                             </tr>

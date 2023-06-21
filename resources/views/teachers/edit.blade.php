@@ -46,7 +46,7 @@
                             </div>
                             <div class="col-2">
                                 <label for="inputCity" class="form-label">City<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
-                                <input type="text" class="form-control" id="inputCity" name="city" placeholder="Dhaka..." required value="{{$teacher->city}}">
+                                <input type="text" class="form-control" id="inputCity" name="county" placeholder="Dhaka..." required value="{{$teacher->county}}">
                             </div>
                             <div class="col-2">
                                 <label for="inputZip" class="form-label">Zip<sup><i class="bi bi-asterisk text-primary"></i></sup></label>

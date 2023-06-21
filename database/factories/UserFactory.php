@@ -34,7 +34,7 @@ class UserFactory extends Factory
             'phone'         => 'Ex: 325 43657 7554',
             'address'       => '568, Dhaka',
             'address2'      => 'Same',
-            'city'          => 'Dhaka',
+            'county'          => 'Dhaka',
             'zip'           => '32545',
             'photo'         => null,
             'role'          => 'admin',
