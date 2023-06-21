@@ -79,7 +79,7 @@
                                                 <th scope="row">City:</th>
                                                 <td>{{$student->county}}</td>
                                                 <th>Zip:</th>
-                                                <td>{{$student->zip}}</td>
+                                                <td>{{$student->town}}</td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">Blood Type:</th>

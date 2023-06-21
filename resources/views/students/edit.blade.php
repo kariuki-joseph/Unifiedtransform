@@ -53,8 +53,8 @@
                                     <input type="text" class="form-control" id="inputCity" name="county" placeholder="Dhaka..." required value="{{$student->county}}">
                                 </div>
                                 <div class="col-2">
-                                    <label for="inputZip" class="form-label">Zip<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
-                                    <input type="text" class="form-control" id="inputZip" name="zip" required value="{{$student->zip}}">
+                                    <label for="inputTown" class="form-label">Zip<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
+                                    <input type="text" class="form-control" id="inputTown" name="town" required value="{{$student->town}}">
                                 </div>
                                 <div class="col-2">
                                     <label for="inputState" class="form-label">Gender<sup><i class="bi bi-asterisk text-primary"></i></sup></label>

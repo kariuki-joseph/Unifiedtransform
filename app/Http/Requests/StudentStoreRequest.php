@@ -33,7 +33,7 @@ class StudentStoreRequest extends FormRequest
             'address'           => 'required|string',
             'address2'          => 'nullable|string',
             'county'              => 'required|string',
-            'zip'               => 'required|string',
+            'town'               => 'required|string',
             'photo'             => 'nullable|string',
             'birthday'          => 'required|date',
             'religion'          => 'required|string',

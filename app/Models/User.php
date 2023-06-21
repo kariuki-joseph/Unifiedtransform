@@ -30,7 +30,7 @@ class User extends Authenticatable
         'phone',
         'address',
         'county',
-        'zip',
+        'town',
         'photo',
         'birthday',
         'religion',

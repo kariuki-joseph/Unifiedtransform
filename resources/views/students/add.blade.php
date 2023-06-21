@@ -65,8 +65,8 @@
                                     <input type="text" class="form-control" id="inputCity" name="county" placeholder="Dhaka..." required value="{{old('county')}}">
                                 </div>
                                 <div class="col-md-3">
-                                    <label for="inputZip" class="form-label">Zip<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
-                                    <input type="text" class="form-control" id="inputZip" name="zip" required value="{{old('zip')}}">
+                                    <label for="inputTown" class="form-label">Zip<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
+                                    <input type="text" class="form-control" id="inputTown" name="town" required value="{{old('town')}}">
                                 </div>
                                 <div class="col-md-3">
                                     <label for="inputState" class="form-label">Gender<sup><i class="bi bi-asterisk text-primary"></i></sup></label>

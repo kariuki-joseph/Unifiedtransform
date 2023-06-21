@@ -33,7 +33,7 @@ class UserRepository implements UserInterface {
                     'address'       => $request['address'],
                     'address2'      => $request['address2'],
                     'county'          => $request['county'],
-                    'zip'           => $request['zip'],
+                    'town'           => $request['town'],
                     'photo'         => (!empty($request['photo']))?$this->convert($request['photo']):null,
                     'role'          => 'teacher',
                     'password'      => Hash::make($request['password']),
@@ -79,7 +79,7 @@ class UserRepository implements UserInterface {
                     'address'       => $request['address'],
                     'address2'      => $request['address2'],
                     'county'          => $request['county'],
-                    'zip'           => $request['zip'],
+                    'town'           => $request['town'],
                     'photo'         => (!empty($request['photo']))?$this->convert($request['photo']):null,
                     'birthday'      => $request['birthday'],
                     'religion'      => $request['religion'],
@@ -131,7 +131,7 @@ class UserRepository implements UserInterface {
                     'address'       => $request['address'],
                     'address2'      => $request['address2'],
                     'county'          => $request['county'],
-                    'zip'           => $request['zip'],
+                    'town'           => $request['town'],
                     'birthday'      => $request['birthday'],
                     'religion'      => $request['religion'],
                     'blood_type'    => $request['blood_type'],
@@ -163,7 +163,7 @@ class UserRepository implements UserInterface {
                     'address'       => $request['address'],
                     'address2'      => $request['address2'],
                     'county'          => $request['county'],
-                    'zip'           => $request['zip'],
+                    'town'           => $request['town'],
                 ]);
             });
         } catch (\Exception $e) {
