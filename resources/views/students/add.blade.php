@@ -144,7 +144,6 @@
                                 </div>
                                 <div class="col-md-12">
                                     <label for="inputBoardRegistrationNumber" class="form-label">Board registration No.</label>
-                                    <input type="text" class="form-control" id="inputBoardRegistrationNumber" name="board_reg_no" placeholder="Registration No." value="{{old('board_reg_no')}}">
                                 </div>
                                 <input type="hidden" name="session_id" value="{{$current_school_session_id}}">
                             </div>

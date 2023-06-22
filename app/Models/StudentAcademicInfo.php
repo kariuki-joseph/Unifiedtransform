@@ -17,7 +17,6 @@ class StudentAcademicInfo extends Model
      */
     protected $fillable = [
         'student_id',
-        'board_reg_no',
     ];
 
     /**

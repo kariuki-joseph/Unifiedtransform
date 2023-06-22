@@ -48,7 +48,6 @@ class StudentStoreRequest extends FormRequest
             // Academic information
             'class_id'          => 'required',
             'section_id'        => 'required',
-            'board_reg_no'      => 'string',
             'session_id'        => 'required',
             'adm_number'    => 'required',
         ];
