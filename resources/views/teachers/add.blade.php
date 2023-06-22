@@ -44,16 +44,16 @@
                                 <div id="previewPhoto"></div>
                                 <input type="hidden" id="photoHiddenInput" name="photo" value="">
                             </div>
-                            <div class="col-md-12">
+                            <!--<div class="col-md-12">
                                 <label for="inputAddress" class="form-label">Address<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
                                 <input type="text" class="form-control" id="inputAddress" name="address" placeholder="634 Main St" required value="{{old('address')}}">
                             </div>
-                            <!--<div class="col-md-12">
+                            <div class="col-md-12">
                                 <label for="inputAddress2" class="form-label">Address 2</label>
                                 <input type="text" class="form-control" id="inputAddress2" name="address2" placeholder="Apartment, studio, or floor" value="{{old('address2')}}">
                             </div>-->
                             <div class="col-md-4">
-                                <label for="inputCity" class="form-label">City<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
+                                <label for="inputCity" class="form-label">County<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
                                 <input type="text" class="form-control" id="inputCity" name="city" placeholder="Dhaka..." required value="{{old('city')}}">
                             </div>
                             <div class="col-md-4">

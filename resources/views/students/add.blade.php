@@ -52,11 +52,11 @@
                                     <label for="inputBirthday" class="form-label">Birthday<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
                                     <input type="date" class="form-control" id="inputBirthday" name="birthday" placeholder="Birthday" required value="{{old('birthday')}}">
                                 </div>
-                                <div class="col-3-md">
+                                <!--<div class="col-3-md">
                                     <label for="inputAddress" class="form-label">Address<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
                                     <input type="text" class="form-control" id="inputAddress" name="address" placeholder="634 Main St" required value="{{old('address')}}">
                                 </div>
-                                <!--<div class="col-3-md">
+                                <div class="col-3-md">
                                     <label for="inputAddress2" class="form-label">Address 2</label>
                                     <input type="text" class="form-control" id="inputAddress2" name="address2" placeholder="Apartment, studio, or floor" value="{{old('address2')}}">
                                 </div>-->

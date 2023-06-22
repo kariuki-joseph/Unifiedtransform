@@ -32,28 +32,28 @@
                                     <label for="inputLastName" class="form-label">Last Name<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
                                     <input type="text" class="form-control" id="inputLastName" name="last_name" placeholder="Last Name" required value="{{$student->last_name}}">
                                 </div>
-                                <div class="col-3">
+                                <!--<div class="col-3">
                                     <label for="inputEmail4" class="form-label">Email<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
                                     <input type="email" class="form-control" id="inputEmail4" name="email" required value="{{$student->email}}">
-                                </div>
+                                </div>-->
                                 <div class="col-3">
                                     <label for="inputBirthday" class="form-label">Birthday<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
                                     <input type="date" class="form-control" id="inputBirthday" name="birthday" placeholder="Birthday" required value="{{$student->birthday}}">
                                 </div>
-                                <div class="col-3">
+                                <!--<div class="col-3">
                                     <label for="inputAddress" class="form-label">Address<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
                                     <input type="text" class="form-control" id="inputAddress" name="address" placeholder="634 Main St" required value="{{$student->address}}">
                                 </div>
                                 <div class="col-3">
                                     <label for="inputAddress2" class="form-label">Address 2</label>
                                     <input type="text" class="form-control" id="inputAddress2" name="address2" placeholder="Apartment, studio, or floor" value="{{$student->address2}}">
-                                </div>
+                                </div>-->
                                 <div class="col-2">
-                                    <label for="inputCity" class="form-label">City<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
+                                    <label for="inputCity" class="form-label">County<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
                                     <input type="text" class="form-control" id="inputCity" name="city" placeholder="Dhaka..." required value="{{$student->city}}">
                                 </div>
                                 <div class="col-2">
-                                    <label for="inputZip" class="form-label">Zip<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
+                                    <label for="inputZip" class="form-label">Town<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
                                     <input type="text" class="form-control" id="inputZip" name="zip" required value="{{$student->zip}}">
                                 </div>
                                 <div class="col-2">
