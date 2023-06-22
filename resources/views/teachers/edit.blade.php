@@ -42,7 +42,6 @@
                             </div>
                             <div class="col-3">
                                 <label for="inputAddress2" class="form-label">Address 2</label>
-                                <input type="text" class="form-control" id="inputAddress2" name="address2" placeholder="Apartment, studio, or floor" value="{{$teacher->address2}}">
                             </div>
                             <div class="col-2">
                                 <label for="inputCity" class="form-label">City<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
