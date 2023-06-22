@@ -38,6 +38,13 @@ class User extends Authenticatable
     ];
 
     /**
+     * Return an empty string if phone is null
+     */
+
+     public function getPhoneAttribute($value){
+        return $value ?? "";
+     }
+    /**
      * The attributes that should be hidden for arrays.
      *
      * @var array
