@@ -79,16 +79,6 @@
                                 </div>
                                 <div class="col-md-4">
                                     <label for="inputBloodType" class="form-label">BloodType<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
-                                    <select id="inputBloodType" class="form-select" name="blood_type" required>
-                                        <option {{old('blood_type') == 'A+' ? 'selected' : ''}}>A+</option>
-                                        <option {{old('blood_type') == 'A-' ? 'selected' : ''}}>A-</option>
-                                        <option {{old('blood_type') == 'B+' ? 'selected' : ''}}>B+</option>
-                                        <option {{old('blood_type') == 'B-' ? 'selected' : ''}}>B-</option>
-                                        <option {{old('blood_type') == 'O+' ? 'selected' : ''}}>O+</option>
-                                        <option {{old('blood_type') == 'O-' ? 'selected' : ''}}>O-</option>
-                                        <option {{old('blood_type') == 'AB+' ? 'selected' : ''}}>AB+</option>
-                                        <option {{old('blood_type') == 'AB-' ? 'selected' : ''}}>AB-</option>
-                                        <option {{old('blood_type') == 'other' ? 'selected' : ''}}>Other</option>
                                     </select>
                                 </div>
                                 <div class="col-md-4">

@@ -34,7 +34,6 @@ class User extends Authenticatable
         'photo',
         'birthday',
         'religion',
-        'blood_type',
         'role',
     ];
 

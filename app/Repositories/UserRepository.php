@@ -81,7 +81,6 @@ class UserRepository implements UserInterface {
                     'photo'         => (!empty($request['photo']))?$this->convert($request['photo']):null,
                     'birthday'      => $request['birthday'],
                     'religion'      => $request['religion'],
-                    'blood_type'    => $request['blood_type'],
                     'role'          => 'student',
                     'password'      => Hash::make($request['password']),
                 ]);
@@ -131,7 +130,6 @@ class UserRepository implements UserInterface {
                     'town'           => $request['town'],
                     'birthday'      => $request['birthday'],
                     'religion'      => $request['religion'],
-                    'blood_type'    => $request['blood_type'],
                 ]);
 
                 // Update Parents' information

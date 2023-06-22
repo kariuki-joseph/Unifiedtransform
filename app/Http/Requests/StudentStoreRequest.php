@@ -36,7 +36,6 @@ class StudentStoreRequest extends FormRequest
             'photo'             => 'nullable|string',
             'birthday'          => 'required|date',
             'religion'          => 'required|string',
-            'blood_type'        => 'required|string',
             'password'          => 'required|string|min:8',
 
             // Parents' information

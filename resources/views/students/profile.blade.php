@@ -81,7 +81,6 @@
                                             </tr>
                                             <tr>
                                                 <th scope="row">Blood Type:</th>
-                                                <td>{{$student->blood_type}}</td>
                                                 <th>Phone:</th>
                                                 <td>{{$student->phone}}</td>
                                             </tr>

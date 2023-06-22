@@ -26,7 +26,6 @@ class CreateUsersTable extends Migration
             $table->string('town');
             $table->string('photo')->nullable();
             $table->string('birthday')->nullable();
-            $table->string('blood_type')->nullable();
             $table->string('religion')->nullable();
             $table->string('role');
             $table->timestamp('email_verified_at')->nullable();
