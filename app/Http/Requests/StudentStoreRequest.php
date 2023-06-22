@@ -50,7 +50,7 @@ class StudentStoreRequest extends FormRequest
             'section_id'        => 'required',
             'board_reg_no'      => 'string',
             'session_id'        => 'required',
-            'id_card_number'    => 'required',
+            'adm_number'    => 'required',
         ];
     }
 }

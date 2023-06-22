@@ -61,7 +61,7 @@
                                 <tbody>
                                     @foreach ($studentList as $student)
                                     <tr>
-                                        <th scope="row">{{$student->id_card_number}}</th>
+                                        <th scope="row">{{$student->adm_number}}</th>
                                         <td>
                                             @if (isset($student->student->photo))
                                                 <img src="{{asset('/storage'.$student->student->photo)}}" class="rounded" alt="Profile picture" height="30" width="30">

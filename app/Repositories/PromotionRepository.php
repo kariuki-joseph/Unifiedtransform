@@ -13,7 +13,7 @@ class PromotionRepository {
                 'session_id'    => $request['session_id'],
                 'class_id'      => $request['class_id'],
                 'section_id'    => $request['section_id'],
-                'id_card_number'=> $request['id_card_number'],
+                'adm_number'=> $request['adm_number'],
             ]);
         } catch (\Exception $e) {
             throw new \Exception('Failed to add Student. '.$e->getMessage());
@@ -23,7 +23,7 @@ class PromotionRepository {
     public function update($request, $student_id) {
         try{
             Promotion::where('student_id', $student_id)->update([
-                'id_card_number'=> $request['id_card_number'],
+                'adm_number'=> $request['adm_number'],
             ]);
         } catch (\Exception $e) {
             throw new \Exception('Failed to update Student. '.$e->getMessage());
@@ -39,7 +39,7 @@ class PromotionRepository {
                         'class_id' => $row['class_id'],
                         'section_id' => $row['section_id'],
                     ],[
-                        'id_card_number' => $row['id_card_number'],
+                        'adm_number' => $row['adm_number'],
                     ]);
                 }
         } catch (\Exception $e) {

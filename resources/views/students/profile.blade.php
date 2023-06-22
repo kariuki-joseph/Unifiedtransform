@@ -37,7 +37,7 @@
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title">{{$student->first_name}} {{$student->last_name}}</h5>
-                                        <p class="card-text">#ID: {{$promotion_info->id_card_number}}</p>
+                                        <p class="card-text">#ID: {{$promotion_info->adm_number}}</p>
                                     </div>
                                     <ul class="list-group list-group-flush">
                                         <li class="list-group-item">Gender: {{$student->gender}}</li>

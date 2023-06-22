@@ -98,7 +98,7 @@
                                 </div>
                                 <div class="col-5-md">
                                     <label for="inputIdCardNumber" class="form-label">Id Card Number<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
-                                    <input type="text" class="form-control" id="inputIdCardNumber" name="id_card_number" placeholder="e.g. 2021-03-01-02-01 (Year Semester Class Section Roll)" required value="{{old('id_card_number')}}">
+                                    <input type="text" class="form-control" id="inputIdCardNumber" name="adm_number" placeholder="e.g. 2021-03-01-02-01 (Year Semester Class Section Roll)" required value="{{old('adm_number')}}">
                                 </div>
                             </div>
                             <div class="row mt-4 g-3">

@@ -34,7 +34,7 @@
                                         @foreach ($students as $index => $student)
                                         <tr>
                                             <th scope="row">
-                                                <input type="text" class="form-control" name="id_card_number[{{$student->student->id}}]" value="{{$student->id_card_number}}">
+                                                <input type="text" class="form-control" name="adm_number[{{$student->student->id}}]" value="{{$student->adm_number}}">
                                             </th>
                                             <td>{{$student->student->first_name}}</td>
                                             <td>{{$student->student->last_name}}</td>
