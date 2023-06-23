@@ -58,11 +58,6 @@
                                                 <td>{{$student->last_name}}</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">Email:</th>
-<<<<<<< HEAD
-=======
-                                                <td>{{$student->email}}</td>
->>>>>>> front-end
                                                 <th>Birthday:</th>
                                                 <td>{{$student->birthday}}</td>
                                             </tr>
@@ -76,30 +71,16 @@
                                                 <th scope="row">Address:</th>
                                                 <td>{{$student->address}}</td>
                                                 <th>Address2:</th>
-<<<<<<< HEAD
                                             </tr>
                                             <tr>
                                                 <th scope="row">City:</th>
                                                 <td>{{$student->county}}</td>
-                                                <th>Zip:</th>
+                                                <th>Town:</th>
                                                 <td>{{$student->town}}</td>
                                             </tr>
                                             <tr>
                                                 <th scope="row">Blood Type:</th>
-=======
-                                                <td>{{$student->address2}}</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">City:</th>
-                                                <td>{{$student->city}}</td>
-                                                <th>Zip:</th>
-                                                <td>{{$student->zip}}</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">Blood Type:</th>
-                                                <td>{{$student->blood_type}}</td>
->>>>>>> front-end
-                                                <th>Phone:</th>
+                                               <th>Phone:</th>
                                                 <td>{{$student->phone}}</td>
                                             </tr>
                                             <tr>
@@ -140,10 +121,7 @@
                                                 <th scope="row">Class:</th>
                                                 <td>{{$promotion_info->section->schoolClass->class_name}}</td>
                                                 <th>Board Reg. No.:</th>
-<<<<<<< HEAD
-=======
                                                 <td>{{$student->academic_info->board_reg_no}}</td>
->>>>>>> front-end
                                             </tr>
                                             <tr>
                                                 <th scope="row">Section:</th>
