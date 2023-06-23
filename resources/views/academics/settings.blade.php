@@ -58,13 +58,13 @@
                             @if ($latest_school_session_id == $current_school_session_id)
                             <div class="col-md-4 mb-4">
                                 <div class="p-3 border bg-light shadow-sm">
-                                    <h6>Create Semester for Current Session</h6>
+                                    <h6>Create Term for Current Session</h6>
                                     <form action="{{route('school.semester.create')}}" method="POST">
                                         @csrf
                                     <input type="hidden" name="session_id" value="{{$current_school_session_id}}">
                                     <div class="mt-2">
-                                        <p>Semester name<sup><i class="bi bi-asterisk text-primary"></i></sup></p>
-                                        <input type="text" class="form-control form-control-sm" placeholder="First Semester" aria-label="Semester name" name="semester_name" required>
+                                        <p>Term name<sup><i class="bi bi-asterisk text-primary"></i></sup></p>
+                                        <input type="text" class="form-control form-control-sm" placeholder="First Term" aria-label="Semester name" name="semester_name" required>
                                     </div>
                                     <div class="mt-2">
                                         <label for="inputStarts" class="form-label">Starts<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
@@ -82,14 +82,22 @@
                                 <div class="p-3 border bg-light shadow-sm">
                                     <h6>Attendance Type</h6>
                                     <p class="text-danger">
-                                        <small><i class="bi bi-exclamation-diamond-fill me-2"></i> Do not change the type in the middle of a Semester.</small>
+<<<<<<< HEAD
+                                        <small><i class="bi bi-exclamation-diamond-fill me-2"></i> Do not change the type in the middle of a Term.</small>
+=======
+                                        <small><i class="bi bi-exclamation-diamond-fill me-2"></i> Do not change the type in the middle of a Term.</small>
+>>>>>>> front-end
                                     </p>
                                     <form action="{{route('school.attendance.type.update')}}" method="POST">
                                         @csrf
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="attendance_type" id="attendance_type_section" {{($academic_setting->attendance_type == 'section')?'checked="checked"':null}} value="section">
                                             <label class="form-check-label" for="attendance_type_section">
+<<<<<<< HEAD
                                                 Attendance by Section
+=======
+                                                Attendance by Stream
+>>>>>>> front-end
                                             </label>
                                         </div>
                                         <div class="form-check">
@@ -118,7 +126,11 @@
                             </div>
                             <div class="col-md-4 mb-4">
                                 <div class="p-3 border bg-light shadow-sm">
+<<<<<<< HEAD
                                 <h6>Create Section</h6>
+=======
+                                <h6>Create Stream</h6>
+>>>>>>> front-end
                                     <form action="{{route('school.section.create')}}" method="POST">
                                         @csrf
                                         <input type="hidden" name="session_id" value="{{$current_school_session_id}}">
@@ -129,7 +141,11 @@
                                             <input class="form-control form-control-sm" name="room_no" type="text" placeholder="Room No." required>
                                         </div>
                                         <div>
+<<<<<<< HEAD
                                             <p>Assign section to class:</p>
+=======
+                                            <p>Assign stream to class:</p>
+>>>>>>> front-end
                                             <select class="form-select form-select-sm" aria-label=".form-select-sm" name="class_id" required>
                                                 @isset($school_classes)
                                                     @foreach ($school_classes as $school_class)
@@ -161,7 +177,11 @@
                                             </select>
                                         </div>
                                         <div class="mb-3">
+<<<<<<< HEAD
                                             <p>Assign to semester:<sup><i class="bi bi-asterisk text-primary"></i></sup></p>
+=======
+                                            <p>Assign to term:<sup><i class="bi bi-asterisk text-primary"></i></sup></p>
+>>>>>>> front-end
                                             <select class="form-select form-select-sm" aria-label=".form-select-sm" name="semester_id" required>
                                                 @isset($semesters)
                                                     @foreach ($semesters as $semester)
@@ -201,7 +221,11 @@
                                             </select>
                                         </div>
                                         <div class="mb-3">
+<<<<<<< HEAD
                                             <p>Assign to semester:<sup><i class="bi bi-asterisk text-primary"></i></sup></p>
+=======
+                                            <p>Assign to term:<sup><i class="bi bi-asterisk text-primary"></i></sup></p>
+>>>>>>> front-end
                                             <select class="form-select form-select-sm" aria-label=".form-select-sm" name="semester_id" required>
                                                 @isset($semesters)
                                                     @foreach ($semesters as $semester)
@@ -222,7 +246,11 @@
                                             </select>
                                         </div>
                                         <div>
+<<<<<<< HEAD
                                             <p class="mt-2">Assign to section:<sup><i class="bi bi-asterisk text-primary"></i></sup></p>
+=======
+                                            <p class="mt-2">Assign to stream:<sup><i class="bi bi-asterisk text-primary"></i></sup></p>
+>>>>>>> front-end
                                             <select class="form-select form-select-sm" id="section-select" aria-label=".form-select-sm" name="section_id" required>
                                             </select>
                                         </div>
@@ -241,10 +269,10 @@
                                     <form action="{{route('school.final.marks.submission.status.update')}}" method="POST">
                                         @csrf
                                         <p class="text-danger">
-                                            <small><i class="bi bi-exclamation-diamond-fill me-2"></i> Usually teachers are allowed to submit final marks just before the end of a "Semester".</small>
+                                            <small><i class="bi bi-exclamation-diamond-fill me-2"></i> Usually teachers are allowed to submit final marks just before the end of a "Term".</small>
                                         </p>
                                         <p class="text-primary">
-                                            <small><i class="bi bi-exclamation-diamond-fill me-2"></i> Disallow at the start of a "Semester".</small>
+                                            <small><i class="bi bi-exclamation-diamond-fill me-2"></i> Disallow at the start of a "Term".</small>
                                         </p>
                                         <div class="form-check form-switch">
                                             <input class="form-check-input" type="checkbox" name="marks_submission_status" id="marks_submission_status_check" {{($academic_setting->marks_submission_status == 'on')?'checked="checked"':null}}>

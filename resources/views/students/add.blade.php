@@ -34,9 +34,10 @@
                                     <label for="inputLastName" class="form-label">Last Name<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
                                     <input type="text" class="form-control" id="inputLastName" name="last_name" placeholder="Last Name" required value="{{old('last_name')}}">
                                 </div>
-                                <div class="col-md-6">
+                                <!--<div class="col-md-6">
                                     <label for="inputEmail4" class="form-label">Email<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
-                                </div>
+                                    <input type="email" class="form-control" id="inputEmail4" name="email" required value="{{old('email')}}">
+                                </div>-->
                                 <div class="col-md-6">
                                     <label for="inputPassword4" class="form-label">Password<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
                                     <input type="password" class="form-control" id="inputPassword4" name="password" required>
@@ -51,20 +52,21 @@
                                     <label for="inputBirthday" class="form-label">Birthday<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
                                     <input type="date" class="form-control" id="inputBirthday" name="birthday" placeholder="Birthday" required value="{{old('birthday')}}">
                                 </div>
-                                <div class="col-3-md">
+                                <!--<div class="col-3-md">
                                     <label for="inputAddress" class="form-label">Address<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
                                     <input type="text" class="form-control" id="inputAddress" name="address" placeholder="634 Main St" required value="{{old('address')}}">
                                 </div>
                                 <div class="col-3-md">
                                     <label for="inputAddress2" class="form-label">Address 2</label>
+                                    <input type="text" class="form-control" id="inputAddress2" name="address2" placeholder="Apartment, studio, or floor" value="{{old('address2')}}">
+                                </div>-->
+                                <div class="col-md-3">
+                                    <label for="inputCity" class="form-label">County<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
+                                    <input type="text" class="form-control" id="inputCity" name="city" placeholder="Dhaka..." required value="{{old('city')}}">
                                 </div>
                                 <div class="col-md-3">
-                                    <label for="inputCity" class="form-label">City<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
-                                    <input type="text" class="form-control" id="inputCity" name="county" placeholder="Dhaka..." required value="{{old('county')}}">
-                                </div>
-                                <div class="col-md-3">
-                                    <label for="inputTown" class="form-label">Zip<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
-                                    <input type="text" class="form-control" id="inputTown" name="town" required value="{{old('town')}}">
+                                    <label for="inputZip" class="form-label">Town<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
+                                    <input type="text" class="form-control" id="inputZip" name="zip" required value="{{old('zip')}}">
                                 </div>
                                 <div class="col-md-3">
                                     <label for="inputState" class="form-label">Gender<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
@@ -79,6 +81,16 @@
                                 </div>
                                 <div class="col-md-4">
                                     <label for="inputBloodType" class="form-label">BloodType<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
+                                    <select id="inputBloodType" class="form-select" name="blood_type" required>
+                                        <option {{old('blood_type') == 'A+' ? 'selected' : ''}}>A+</option>
+                                        <option {{old('blood_type') == 'A-' ? 'selected' : ''}}>A-</option>
+                                        <option {{old('blood_type') == 'B+' ? 'selected' : ''}}>B+</option>
+                                        <option {{old('blood_type') == 'B-' ? 'selected' : ''}}>B-</option>
+                                        <option {{old('blood_type') == 'O+' ? 'selected' : ''}}>O+</option>
+                                        <option {{old('blood_type') == 'O-' ? 'selected' : ''}}>O-</option>
+                                        <option {{old('blood_type') == 'AB+' ? 'selected' : ''}}>AB+</option>
+                                        <option {{old('blood_type') == 'AB-' ? 'selected' : ''}}>AB-</option>
+                                        <option {{old('blood_type') == 'other' ? 'selected' : ''}}>Other</option>
                                     </select>
                                 </div>
                                 <div class="col-md-4">
@@ -94,11 +106,11 @@
                                 </div>
                                 <div class="col-md-4">
                                     <label for="inputPhone" class="form-label">Phone<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
-                                    <input type="text" class="form-control" id="inputPhone" name="phone" placeholder="+880 01......" required value="{{old('phone')}}">
+                                    <input type="text" class="form-control" id="inputPhone" name="phone" placeholder="+254 7......" value="{{old('phone')}}">
                                 </div>
                                 <div class="col-5-md">
-                                    <label for="inputIdCardNumber" class="form-label">Id Card Number<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
-                                    <input type="text" class="form-control" id="inputIdCardNumber" name="adm_number" placeholder="e.g. 2021-03-01-02-01 (Year Semester Class Section Roll)" required value="{{old('adm_number')}}">
+                                    <label for="inputIdCardNumber" class="form-label">Admission number<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
+                                    <input type="text" class="form-control" id="inputIdCardNumber" name="id_card_number" placeholder="e.g. 2021-03-01-02-01 (Year Semester Class Section Roll)" required value="{{old('id_card_number')}}">
                                 </div>
                             </div>
                             <div class="row mt-4 g-3">
@@ -109,7 +121,7 @@
                                 </div>
                                 <div class="col-md-3">
                                     <label for="inputFatherPhone" class="form-label">Father's Phone<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
-                                    <input type="text" class="form-control" id="inputFatherPhone" name="father_phone" placeholder="+880 01......" required value="{{old('father_phone')}}">
+                                    <input type="text" class="form-control" id="inputFatherPhone" name="father_phone" placeholder="+254 7......" required value="{{old('father_phone')}}">
                                 </div>
                                 <div class="col-md-3">
                                     <label for="inputMotherName" class="form-label">Mother Name<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
@@ -117,7 +129,7 @@
                                 </div>
                                 <div class="col-md-3">
                                     <label for="inputMotherPhone" class="form-label">Mother's Phone<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
-                                    <input type="text" class="form-control" id="inputMotherPhone" name="mother_phone" placeholder="+880 01......" required value="{{old('mother_name')}}">
+                                    <input type="text" class="form-control" id="inputMotherPhone" name="mother_phone" placeholder="+254 7......" required value="{{old('mother_name')}}">
                                 </div>
                                 <div class="col-4-md">
                                     <label for="inputParentAddress" class="form-label">Address<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
@@ -138,13 +150,14 @@
                                     </select>
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="inputAssignToSection" class="form-label">Assign to section:<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
+                                    <label for="inputAssignToSection" class="form-label">Assign to stream:<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
                                     <select class="form-select" id="inputAssignToSection" name="section_id" required>
                                     </select>
                                 </div>
-                                <div class="col-md-12">
+                                <!--<div class="col-md-12">
                                     <label for="inputBoardRegistrationNumber" class="form-label">Board registration No.</label>
-                                </div>
+                                    <input type="text" class="form-control" id="inputBoardRegistrationNumber" name="board_reg_no" placeholder="Registration No." value="{{old('board_reg_no')}}">
+                                </div>-->
                                 <input type="hidden" name="session_id" value="{{$current_school_session_id}}">
                             </div>
                             <div class="row mt-4">

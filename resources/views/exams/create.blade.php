@@ -22,7 +22,7 @@
                                     @csrf
                                     <input type="hidden" name="session_id" value="{{$current_school_session_id}}">
                                     <div>
-                                        <p>Select Semester:<sup><i class="bi bi-asterisk text-primary"></i></sup></p>
+                                        <p>Select Term:<sup><i class="bi bi-asterisk text-primary"></i></sup></p>
                                         <select class="form-select" name="semester_id">
                                             @isset($semesters)
                                                 @foreach ($semesters as $semester)

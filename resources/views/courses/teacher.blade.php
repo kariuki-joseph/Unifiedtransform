@@ -41,7 +41,7 @@
                                     <tr>
                                         <th scope="col">Course Name</th>
                                         <th scope="col">Class</th>
-                                        <th scope="col">Section</th>
+                                        <th scope="col">Stream</th>
                                         <th scope="col">Actions</th>
                                     </tr>
                                 </thead>

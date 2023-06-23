@@ -32,27 +32,29 @@
                                     <label for="inputLastName" class="form-label">Last Name<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
                                     <input type="text" class="form-control" id="inputLastName" name="last_name" placeholder="Last Name" required value="{{$student->last_name}}">
                                 </div>
-                                <div class="col-3">
+                                <!--<div class="col-3">
                                     <label for="inputEmail4" class="form-label">Email<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
-                                </div>
+                                    <input type="email" class="form-control" id="inputEmail4" name="email" required value="{{$student->email}}">
+                                </div>-->
                                 <div class="col-3">
                                     <label for="inputBirthday" class="form-label">Birthday<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
                                     <input type="date" class="form-control" id="inputBirthday" name="birthday" placeholder="Birthday" required value="{{$student->birthday}}">
                                 </div>
-                                <div class="col-3">
+                                <!--<div class="col-3">
                                     <label for="inputAddress" class="form-label">Address<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
                                     <input type="text" class="form-control" id="inputAddress" name="address" placeholder="634 Main St" required value="{{$student->address}}">
                                 </div>
                                 <div class="col-3">
                                     <label for="inputAddress2" class="form-label">Address 2</label>
+                                    <input type="text" class="form-control" id="inputAddress2" name="address2" placeholder="Apartment, studio, or floor" value="{{$student->address2}}">
+                                </div>-->
+                                <div class="col-2">
+                                    <label for="inputCity" class="form-label">County<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
+                                    <input type="text" class="form-control" id="inputCity" name="city" placeholder="Dhaka..." required value="{{$student->city}}">
                                 </div>
                                 <div class="col-2">
-                                    <label for="inputCity" class="form-label">City<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
-                                    <input type="text" class="form-control" id="inputCity" name="county" placeholder="Dhaka..." required value="{{$student->county}}">
-                                </div>
-                                <div class="col-2">
-                                    <label for="inputTown" class="form-label">Zip<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
-                                    <input type="text" class="form-control" id="inputTown" name="town" required value="{{$student->town}}">
+                                    <label for="inputZip" class="form-label">Town<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
+                                    <input type="text" class="form-control" id="inputZip" name="zip" required value="{{$student->zip}}">
                                 </div>
                                 <div class="col-2">
                                     <label for="inputState" class="form-label">Gender<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
@@ -67,6 +69,16 @@
                                 </div>
                                 <div class="col-2">
                                     <label for="inputBloodType" class="form-label">BloodType<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
+                                    <select id="inputBloodType" class="form-select" name="blood_type" required>
+                                        <option value="A+" {{($student->blood_type == 'A+')?'selected':null}}>A+</option>
+                                        <option value="A-" {{($student->blood_type == 'A-')?'selected':null}}>A-</option>
+                                        <option value="B+" {{($student->blood_type == 'B+')?'selected':null}}>B+</option>
+                                        <option value="B-" {{($student->blood_type == 'B-')?'selected':null}}>B-</option>
+                                        <option value="O+" {{($student->blood_type == 'O+')?'selected':null}}>O+</option>
+                                        <option value="O-" {{($student->blood_type == 'O-')?'selected':null}}>O-</option>
+                                        <option value="AB+" {{($student->blood_type == 'AB+')?'selected':null}}>AB+</option>
+                                        <option value="AB-" {{($student->blood_type == 'AB-')?'selected':null}}>AB-</option>
+                                        <option value="Other" {{($student->blood_type == 'Other')?'selected':null}}>Other</option>
                                     </select>
                                 </div>
                                 <div class="col-2">
@@ -86,7 +98,7 @@
                                 </div>
                                 <div class="col-3">
                                     <label for="inputIdCardNumber" class="form-label">Id Card Number<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
-                                    <input type="text" class="form-control" id="inputIdCardNumber" name="adm_number" placeholder="e.g. 2021-03-01-02-01 (Year Semester Class Section Roll)" required value="{{$promotion_info->adm_number}}">
+                                    <input type="text" class="form-control" id="inputIdCardNumber" name="id_card_number" placeholder="e.g. 2021-03-01-02-01 (Year Semester Class Section Roll)" required value="{{$promotion_info->id_card_number}}">
                                 </div>
                             </div>
                             <div class="row mt-4 g-3">
