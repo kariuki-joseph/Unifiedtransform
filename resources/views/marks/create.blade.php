@@ -24,7 +24,7 @@
                     </p>
                     @endif
                     <p class="text-primary">
-                        <i class="bi bi-exclamation-diamond-fill me-2"></i> Final Marks submission should be done only once in a Semester when the Marks Submission Window is open.
+                        <i class="bi bi-exclamation-diamond-fill me-2"></i> Final Marks submission should be done only once in a Term when the Marks Submission Window is open.
                     </p>
                     @if ($final_marks_submitted)
                     <p class="text-success">

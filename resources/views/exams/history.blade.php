@@ -50,7 +50,7 @@
                                                                         <div class="col text-end">Jan 9th 2021 9:00 AM</div>
                                                                     </div>
                                                                     <div class="row text-muted">
-                                                                        <div class="col">Belongs to: First Semester</div>
+                                                                        <div class="col">Belongs to: First Term</div>
                                                                         <div class="col text-end">Starts: Jan 9th 2021 - Ends: Jan 15th 2021</div>
                                                                     </div>
                                                                 

@@ -64,7 +64,7 @@
                                     <input type="hidden" name="session_id" value="{{$current_school_session_id}}">
                                     <div class="mt-2">
                                         <p>Term name<sup><i class="bi bi-asterisk text-primary"></i></sup></p>
-                                        <input type="text" class="form-control form-control-sm" placeholder="First Term" aria-label="Semester name" name="semester_name" required>
+                                        <input type="text" class="form-control form-control-sm" placeholder="First Term" aria-label="Term name" name="semester_name" required>
                                     </div>
                                     <div class="mt-2">
                                         <label for="inputStarts" class="form-label">Starts<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
