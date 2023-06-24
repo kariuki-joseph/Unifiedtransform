@@ -79,8 +79,8 @@
                                     </select>
                                 </div>
                                 <div class="col-md-4">
-                                    <label for="inputPhone" class="form-label">Phone<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
-                                    <input type="text" class="form-control" id="inputPhone" name="phone" placeholder="07123..." value="{{old('phone')}}">
+                                    <label for="inputPhone" class="form-label">Phone</label>
+                                    <input type="tel" class="form-control" id="inputPhone" name="phone" placeholder="07123..." value="{{old('phone')}}">
                                 </div>
                                 <div class="col-5-md">
                                     <label for="inputAdmNumber" class="form-label">Admission number<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
