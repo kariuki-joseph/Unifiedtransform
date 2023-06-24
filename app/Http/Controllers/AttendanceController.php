@@ -146,7 +146,6 @@ class AttendanceController extends Controller
         $class_id = $request->query('class_id');
         $section_id = $request->query('section_id');
         $course_id = $request->query('course_id');
-die($course_id);
         $attendanceRepository = new AttendanceRepository();
 
         try {

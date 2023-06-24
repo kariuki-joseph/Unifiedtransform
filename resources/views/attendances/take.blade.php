@@ -14,11 +14,11 @@
                     @include('session-messages')
 
                     <h3><i class="bi bi-compass"></i>
-                        Class #{{request()->query('class_name')}}, 
+                        Class : {{request()->query('class_name')}} 
                         @if ($academic_setting->attendance_type == 'course')
                             Course: {{request()->query('course_name')}}
                         @else
-                            Section #{{request()->query('section_name')}}
+			    {{request()->query('section_name')}}
                         @endif
                     </h3>
                     <div class="mt-4">Current Date and Time: {{ date('Y-m-d H:i:s') }}</div>
@@ -38,7 +38,7 @@
                                 <table class="table">
                                     <thead>
                                         <tr>
-                                            <th scope="col"># ID Card Number</th>
+                                            <th scope="col">Admission Number</th>
                                             <th scope="col">Student Name</th>
                                             <th scope="col">Present</th>
                                         </tr>
