@@ -59,7 +59,7 @@ class CourseController extends Controller
         try {
             $this->schoolCourseRepository->create($request->validated());
 
-            return back()->with('status', 'Course creation was successful!');
+            return back()->with('status', 'Subject creation was successful!');
         } catch (\Exception $e) {
             return back()->withError($e->getMessage());
         }

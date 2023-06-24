@@ -118,7 +118,6 @@ class UserRepository implements UserInterface {
                 User::where('id', $request['student_id'])->update([
                     'first_name'    => $request['first_name'],
                     'last_name'     => $request['last_name'],
-                    'email'         => $request['email'],
                     'gender'        => $request['gender'],
                     'nationality'   => $request['nationality'],
                     'phone'         => $request['phone'],

@@ -62,7 +62,7 @@ class SectionController extends Controller
         try {
             $this->schoolSectionRepository->create($request->validated());
 
-            return back()->with('status', 'Section creation was successful!');
+            return back()->with('status', 'Stream creation was successful!');
         } catch (\Exception $e) {
             return back()->withError($e->getMessage());
         }
