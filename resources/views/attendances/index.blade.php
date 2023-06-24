@@ -22,7 +22,7 @@
                                                 @foreach ($courses as $course)
                                                     @if ($course->class_id == $school_class->id)
                                                     <h6>
-                                                        Course: {{$course->course_name}}
+                                                        Subject: {{$course->course_name}}
                                                     </h6>
                                                     <div class="list-group mb-2">
                                                         <a href="{{url('attendances/view?class_id='.$school_class->id.'&class_name='.$school_class->class_name.'&course_id='.$course->id.'&course_name='.$course->course_name)}}" class="list-group-item list-group-item-action  d-flex justify-content-between align-items-center">

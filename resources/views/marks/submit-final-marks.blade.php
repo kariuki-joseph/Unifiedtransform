@@ -12,7 +12,7 @@
                     </h1>
                     @include('session-messages')
                     <h5><i class="bi bi-diagram-2"></i> Class {{$class_name}}, Section #{{$section_name}}</h5>
-                    <h5><i class="bi bi-compass"></i> Course: {{$course_name}}</h5>
+                    <h5><i class="bi bi-compass"></i> Subject: {{$course_name}}</h5>
                     <form action="{{route('course.final.mark.submit.store')}}" method="POST">
                         @csrf
                         <input type="hidden" name="session_id" value="{{$current_school_session_id}}">

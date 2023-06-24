@@ -16,7 +16,7 @@
                     <h3><i class="bi bi-compass"></i>
                         Class : {{request()->query('class_name')}} 
                         @if ($academic_setting->attendance_type == 'course')
-                            Course: {{request()->query('course_name')}}
+                            Subject: {{request()->query('course_name')}}
                         @else
 			    {{request()->query('section_name')}}
                         @endif

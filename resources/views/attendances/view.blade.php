@@ -18,7 +18,7 @@
                         </ol>
                     </nav>
                     @if(request()->query('course_name'))
-                        <h3><i class="bi bi-compass"></i> Course: {{request()->query('course_name')}} </h3>
+                        <h3><i class="bi bi-compass"></i> Subject: {{request()->query('course_name')}} </h3>
                     @elseif(request()->query('section_name'))
                         <h3><i class="bi bi-diagram-2"></i> Section: {{request()->query('section_name')}} </h3>
                     @endif

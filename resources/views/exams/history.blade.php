@@ -55,7 +55,7 @@
                                                                     </div>
                                                                 
                                                                 <p class="card-text">
-                                                                    <span class="badge bg-secondary">Course: Math</span>
+                                                                    <span class="badge bg-secondary">Subject: Math</span>
                                                                     <span class="badge bg-dark">Marks: 100</span>
                                                                     <span class="badge bg-primary">Category: Quiz</span>
                                                                 </p>
