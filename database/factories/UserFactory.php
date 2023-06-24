@@ -31,9 +31,9 @@ class UserFactory extends Factory
             'remember_token' => Str::random(10),
             'gender'        => $this->faker->randomElement(['Male', 'Female']),
             'nationality'   => 'Bangladeshi',
-            'phone'         => 'Ex: 325 43657 7554',
-            'county'          => 'Dhaka',
-            'town'           => '32545',
+            'phone'         => '0712345678',
+            'county'          => 'Nakuru',
+            'town'           => 'Bahati',
             'photo'         => null,
             'role'          => 'admin',
         ];
