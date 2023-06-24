@@ -58,7 +58,7 @@
                             @if ($latest_school_session_id == $current_school_session_id)
                             <div class="col-md-4 mb-4">
                                 <div class="p-3 border bg-light shadow-sm">
-                                    <h6>Create Terms for Current Session</h6>
+                                    <h6>Create Terms for Current Academic Session</h6>
                                     <form action="{{route('school.semester.create')}}" method="POST">
                                         @csrf
                                     <input type="hidden" name="session_id" value="{{$current_school_session_id}}">

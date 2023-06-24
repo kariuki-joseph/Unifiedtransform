@@ -20,7 +20,7 @@
                     @include('session-messages')
 
                     <p class="text-primary">
-                        <small><i class="bi bi-exclamation-diamond-fill me-2"></i> Remember to create related "Class" and "Section" before adding student</small>
+                        <small><i class="bi bi-exclamation-diamond-fill me-2"></i> Remember to create related "Classes" and "Streams" before adding a student</small>
                     </p>
                     <div class="mb-4">
                         <form class="row g-3" action="{{route('school.student.create')}}" method="POST">
