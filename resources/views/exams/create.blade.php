@@ -49,7 +49,7 @@
                                     </div>
                                     <div class="mt-2">
                                         <p>Exam name<sup><i class="bi bi-asterisk text-primary"></i></sup></p>
-                                        <input type="text" class="form-control" name="exam_name" placeholder="CAT1, Mid Term 1, End Term 1..." aria-label="CAT1, Mid Term 1, End Term 1...">
+                                        <input type="text" class="form-control" name="exam_name" placeholder="CAT1/Mid Term 1/End Term 1..." aria-label="CAT1, Mid Term 1, End Term 1...">
                                     </div>
                                     <div class="mt-2">
                                         <label for="inputStarts" class="form-label">Starts<sup><i class="bi bi-asterisk text-primary"></i></sup></label>

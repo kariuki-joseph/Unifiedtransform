@@ -25,15 +25,15 @@
                                     <input type="hidden" name="session_id" value="{{$current_school_session_id}}">
                                     <div class="mt-2">
                                         <label for="inputTotalMarks" class="form-label">Total Marks<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
-                                        <input type="number" class="form-control" id="inputTotalMarks" placeholder="30, 70, 100" name="total_marks" step="0.01">
+                                        <input type="number" class="form-control" id="inputTotalMarks" placeholder="30/70/100 ..." name="total_marks" step="0.01">
                                     </div>
                                     <div class="mt-2">
                                         <label for="inputPassMarks" class="form-label">Pass Marks<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
-                                        <input type="number" class="form-control" id="inputPassMarks" placeholder="40" name="pass_marks" step="0.01">
+                                        <input type="number" class="form-control" id="inputPassMarks" placeholder="Pass mark e.g. 40" name="pass_marks" step="0.01">
                                     </div>
                                     <div class="mt-2">
                                         <label for="inputMarksDistributionNote" class="form-label">Marks Distribution Note<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
-                                        <textarea class="form-control" id="inputMarksDistributionNote" rows="3" placeholder="Excellent, You can do better" name="marks_distribution_note"></textarea>
+                                        <textarea class="form-control" id="inputMarksDistributionNote" rows="3" placeholder="Teacher's comment on this pass mark, e.g. Excellent" name="marks_distribution_note"></textarea>
                                     </div>
                                     <button type="submit" class="mt-3 btn btn-sm btn-outline-primary"><i class="bi bi-plus"></i> Add</button>
                                 </form>
