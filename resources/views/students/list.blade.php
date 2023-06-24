@@ -49,11 +49,10 @@
                             <table class="table table-responsive">
                                 <thead>
                                     <tr>
-                                        <th scope="col">ID Card Number</th>
+                                        <th scope="col">Admission Number</th>
                                         <th scope="col">Photo</th>
                                         <th scope="col">First Name</th>
                                         <th scope="col">Last Name</th>
-                                        <th scope="col">Email</th>
                                         <th scope="col">Phone</th>
                                         <th scope="col">Actions</th>
                                     </tr>
@@ -105,7 +104,7 @@
         .then(function(data) {
             var sectionSelect = document.getElementById('section-select');
             sectionSelect.options.length = 0;
-            data.sections.unshift({'id': 0,'section_name': 'Please select a section'})
+            data.sections.unshift({'id': 0,'section_name': 'Please select a stream'})
             data.sections.forEach(function(section, key) {
                 sectionSelect[key] = new Option(section.section_name, section.id);
             });

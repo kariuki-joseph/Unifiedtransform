@@ -36,21 +36,13 @@
                                 <label for="inputEmail" class="form-label">Email<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
                                 <input type="email" class="form-control" id="inputEmail" name="email" required value="{{$teacher->email}}">
                             </div>
-                            <!--<div class="col-4">
-                                <label for="inputAddress" class="form-label">Address<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
-                                <input type="text" class="form-control" id="inputAddress" name="address" placeholder="634 Main St" required value="{{$teacher->address}}">
-                            </div>
-                            <div class="col-3">
-                                <label for="inputAddress2" class="form-label">Address 2</label>
-<<<<<<< HEAD
+                            <div class="col-2">
+                                <label for="inputCounty" class="form-label">County<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
+                                <input type="text" class="form-control" id="inputCounty" name="county" placeholder="Nakuru..." required value="{{$teacher->county}}">
                             </div>
                             <div class="col-2">
-                                <label for="inputCity" class="form-label">City<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
-                                <input type="text" class="form-control" id="inputCity" name="county" placeholder="Dhaka..." required value="{{$teacher->county}}">
-                            </div>
-                            <div class="col-2">
-                                <label for="inputZip" class="form-label">Town<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
-                                <input type="text" class="form-control" id="inputZip" name="zip" required value="{{$teacher->zip}}">
+                                <label for="inputTown" class="form-label">Town<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
+                                <input type="text" class="form-control" id="inputTown" name="town" placeholder="Bahati..." required value="{{$teacher->town}}">
                             </div>
                             <div class="col-3">
                                 <label for="inputPhone" class="form-label">Phone<sup><i class="bi bi-asterisk text-primary"></i></sup></label>

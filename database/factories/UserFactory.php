@@ -32,7 +32,6 @@ class UserFactory extends Factory
             'gender'        => $this->faker->randomElement(['Male', 'Female']),
             'nationality'   => 'Bangladeshi',
             'phone'         => 'Ex: 325 43657 7554',
-            'address'       => '568, Dhaka',
             'county'          => 'Dhaka',
             'town'           => '32545',
             'photo'         => null,

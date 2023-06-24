@@ -31,13 +31,13 @@
                                 </select>
                             </div>
                             <div class="mb-3">
-                                <p class="mb-2">Select course:<sup><i class="bi bi-asterisk text-primary"></i></sup></p>
+                                <p class="mb-2">Select subject:<sup><i class="bi bi-asterisk text-primary"></i></sup></p>
                                 <select class="form-select" id="course-select" name="course_id">
                                 </select>
                             </div>
                             <div class="mb-3">
                                 <label for="syllabus-name" class="form-label">Syllabus Name</label>
-                                <input type="text" class="form-control" id="syllabus-name" name="syllabus_name" placeholder="Syllabus Name" required>
+                                <input type="text" class="form-control" id="syllabus-name" name="syllabus_name" placeholder="e.g. English Syllabus" required>
                             </div>
                             <div class="form-group mb-3">
                                 <label for="syllabus-file" class="form-label">Syllabus File</label>
@@ -66,7 +66,7 @@
 
             var courseSelect = document.getElementById('course-select');
             courseSelect.options.length = 0;
-            data.courses.unshift({'id': 0,'course_name': 'Please select a course'})
+            data.courses.unshift({'id': 0,'course_name': 'Please select a subject'})
             data.courses.forEach(function(course, key) {
                 courseSelect[key] = new Option(course.course_name, course.id);
             });

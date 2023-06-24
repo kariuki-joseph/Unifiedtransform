@@ -79,13 +79,15 @@ class RoutineController extends Controller
     {
         $class_id = $request->query('class_id', 0);
         $section_id = $request->query('section_id', 0);
+        $section_name = $request->query('section_name', "N/A");
         $current_school_session_id = $this->getSchoolCurrentSession();
         $routineRepository = new RoutineRepository();
         $routines = $routineRepository->getAll($class_id, $section_id, $current_school_session_id);
         $routines = $routines->sortBy('weekday')->groupBy('weekday');
 
         $data = [
-            'routines' => $routines
+		'routines' => $routines,
+		'section_name' => $section_name,
         ];
 
         return view('routines.show', $data);

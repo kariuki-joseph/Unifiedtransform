@@ -7,11 +7,11 @@
         <div class="col-xs-11 col-sm-11 col-md-11 col-lg-10 col-xl-10 col-xxl-10">
             <div class="row pt-2">
                 <div class="col ps-4">
-                    <h1 class="display-6 mb-3"><i class="bi bi-plus"></i> Create Routine</h1>
+                    <h1 class="display-6 mb-3"><i class="bi bi-plus"></i> Create Timetable</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Create Routine</li>
+                            <li class="breadcrumb-item active" aria-current="page">Create Timetable</li>
                         </ol>
                     </nav>
                     @include('session-messages')
@@ -22,7 +22,7 @@
                                     @csrf
                                     <input type="hidden" name="session_id" value="{{$current_school_session_id}}">
                                     <div>
-                                        <p class="mt-2">Select class:<sup><i class="bi bi-asterisk text-primary"></i></sup></p>
+                                        <p class="mt-2">Class:<sup><i class="bi bi-asterisk text-primary"></i></sup></p>
                                         <select onchange="getSectionsAndCourses(this);" class="form-select" name="class_id" required>
                                             @isset($classes)
                                                 <option selected disabled>Please select a class</option>
@@ -33,12 +33,12 @@
                                         </select>
                                     </div>
                                     <div>
-                                        <p class="mt-2">Select section:<sup><i class="bi bi-asterisk text-primary"></i></sup></p>
+                                        <p class="mt-2">Stream:<sup><i class="bi bi-asterisk text-primary"></i></sup></p>
                                         <select class="form-select" id="section-select" name="section_id" required>
                                         </select>
                                     </div>
                                     <div>
-                                        <p class="mt-2">Select course:<sup><i class="bi bi-asterisk text-primary"></i></sup></p>
+                                        <p class="mt-2">Subject:<sup><i class="bi bi-asterisk text-primary"></i></sup></p>
                                         <select class="form-select" id="course-select" name="course_id" required>
                                         </select>
                                     </div>
@@ -84,14 +84,14 @@
         .then(function(data) {
             var sectionSelect = document.getElementById('section-select');
             sectionSelect.options.length = 0;
-            data.sections.unshift({'id': 0,'section_name': 'Please select a section'})
+            data.sections.unshift({'id': 0,'section_name': 'Please select a stream'})
             data.sections.forEach(function(section, key) {
                 sectionSelect[key] = new Option(section.section_name, section.id);
             });
 
             var courseSelect = document.getElementById('course-select');
             courseSelect.options.length = 0;
-            data.courses.unshift({'id': 0,'course_name': 'Please select a course'})
+            data.courses.unshift({'id': 0,'course_name': 'Please select a subject'})
             data.courses.forEach(function(course, key) {
                 courseSelect[key] = new Option(course.course_name, course.id);
             });

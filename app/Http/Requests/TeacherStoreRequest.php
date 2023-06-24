@@ -30,7 +30,6 @@ class TeacherStoreRequest extends FormRequest
             'gender'        => 'required|string',
             'nationality'   => 'required|string',
             'phone'         => 'required|string',
-            'address'       => 'required|string',
             'county'          => 'required|string',
             'town'           => 'required|string',
             'photo'         => 'nullable|string',

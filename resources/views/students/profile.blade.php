@@ -37,11 +37,11 @@
                                     </div>
                                     <div class="card-body">
                                         <h5 class="card-title">{{$student->first_name}} {{$student->last_name}}</h5>
-                                        <p class="card-text">#ID: {{$promotion_info->adm_number}}</p>
+                                        <p class="card-text">Adm No.: {{$promotion_info->adm_number}}</p>
                                     </div>
                                     <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Class: {{$promotion_info->section->schoolClass->class_name.' '.$promotion_info->section->section_name}}</li>
                                         <li class="list-group-item">Gender: {{$student->gender}}</li>
-                                        <li class="list-group-item">Phone: {{$student->phone}}</li>
                                         {{-- <li class="list-group-item"><a href="#">View Marks &amp; Results</a></li> --}}
                                     </ul>
                                 </div>
@@ -58,6 +58,8 @@
                                                 <td>{{$student->last_name}}</td>
                                             </tr>
                                             <tr>
+						<th scope="row">Gender:</th>
+                                                <td>{{$student->gender}}</td>
                                                 <th>Birthday:</th>
                                                 <td>{{$student->birthday}}</td>
                                             </tr>
@@ -67,25 +69,15 @@
                                                 <th>Religion:</th>
                                                 <td>{{$student->religion}}</td>
                                             </tr>
-                                            <tr>
-                                                <th scope="row">Address:</th>
-                                                <td>{{$student->address}}</td>
-                                                <th>Address2:</th>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">City:</th>
+                                           <tr>
+                                                <th scope="row">County:</th>
                                                 <td>{{$student->county}}</td>
                                                 <th>Town:</th>
                                                 <td>{{$student->town}}</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">Blood Type:</th>
-                                               <th>Phone:</th>
-                                                <td>{{$student->phone}}</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">Gender:</th>
-                                                <td colspan="3">{{$student->gender}}</td>
+                                                <th scope="row">Phone:</th>
+                                                <td colspan="3">{{$student->phone}}</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -107,7 +99,7 @@
                                                 <td>{{$student->parent_info->mother_phone}}</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">Address:</th>
+                                                <th scope="row">Home Location:</th>
                                                 <td colspan="3">{{$student->parent_info->parent_address}}</td>
                                             </tr>
                                         </tbody>
@@ -119,13 +111,7 @@
                                         <tbody>
                                             <tr>
                                                 <th scope="row">Class:</th>
-                                                <td>{{$promotion_info->section->schoolClass->class_name}}</td>
-                                                <th>Board Reg. No.:</th>
-                                                <td>{{$student->academic_info->board_reg_no}}</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">Section:</th>
-                                                <td colspan="3">{{$promotion_info->section->section_name}}</td>
+                                                <td>{{$promotion_info->section->schoolClass->class_name.' '.$promotion_info->section->section_name}}</td>
                                             </tr>
                                         </tbody>
                                     </table>

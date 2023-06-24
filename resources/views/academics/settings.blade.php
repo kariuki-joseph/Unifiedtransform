@@ -58,7 +58,7 @@
                             @if ($latest_school_session_id == $current_school_session_id)
                             <div class="col-md-4 mb-4">
                                 <div class="p-3 border bg-light shadow-sm">
-                                    <h6>Create Term for Current Session</h6>
+                                    <h6>Create Terms for Current Session</h6>
                                     <form action="{{route('school.semester.create')}}" method="POST">
                                         @csrf
                                     <input type="hidden" name="session_id" value="{{$current_school_session_id}}">
@@ -95,7 +95,7 @@
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="attendance_type" id="attendance_type_course" {{($academic_setting->attendance_type == 'course')?'checked="checked"':null}} value="course">
                                             <label class="form-check-label" for="attendance_type_course">
-                                                Attendance by Course
+                                                Attendance by Subject
                                             </label>
                                         </div>
 
@@ -105,12 +105,12 @@
                             </div>
                             <div class="col-md-4 mb-4">
                                 <div class="p-3 border bg-light shadow-sm">
-                                    <h6>Create Class</h6>
+                                    <h6>Create Classes</h6>
                                     <form action="{{route('school.class.create')}}" method="POST">
                                         @csrf
                                         <input type="hidden" name="session_id" value="{{$current_school_session_id}}">
                                         <div class="mb-3">
-                                            <input type="text" class="form-control form-control-sm" name="class_name" placeholder="Class name" aria-label="Class name" required>
+                                            <input type="text" class="form-control form-control-sm" name="class_name" placeholder="Form 1" aria-label="Class name" required>
                                         </div>
                                         <button class="btn btn-sm btn-outline-primary" type="submit"><i class="bi bi-check2"></i> Create</button>
                                     </form>
@@ -118,15 +118,15 @@
                             </div>
                             <div class="col-md-4 mb-4">
                                 <div class="p-3 border bg-light shadow-sm">
-                               <h6>Create Stream</h6>
+                               <h6>Create Streams</h6>
                                     <form action="{{route('school.section.create')}}" method="POST">
                                         @csrf
                                         <input type="hidden" name="session_id" value="{{$current_school_session_id}}">
                                         <div class="mb-3">
-                                            <input class="form-control form-control-sm" name="section_name" type="text" placeholder="Section name" required>
+                                            <input class="form-control form-control-sm" name="section_name" type="text" placeholder="East" required>
                                         </div>
                                         <div class="mb-3">
-                                            <input class="form-control form-control-sm" name="room_no" type="text" placeholder="Room No." required>
+                                            <input class="form-control form-control-sm" name="room_no" type="text" placeholder="1 East" required>
                                         </div>
                                         <div>
                                            <p>Assign stream to class:</p>
@@ -144,15 +144,15 @@
                             </div>
                             <div class="col-md-4 mb-4">
                                 <div class="p-3 border bg-light shadow-sm">
-                                    <h6>Create Course</h6>
+                                    <h6>Create Subjects</h6>
                                     <form action="{{route('school.course.create')}}" method="POST">
                                         @csrf
                                         <input type="hidden" name="session_id" value="{{$current_school_session_id}}">
                                         <div class="mb-1">
-                                            <input type="text" class="form-control form-control-sm" name="course_name" placeholder="Course name" aria-label="Course name" required>
+                                            <input type="text" class="form-control form-control-sm" name="course_name" placeholder="Subject name" aria-label="Subject name" required>
                                         </div>
                                         <div class="mb-3">
-                                            <p class="mt-2">Course Type:<sup><i class="bi bi-asterisk text-primary"></i></sup></p>
+                                            <p class="mt-2">Subject Type:<sup><i class="bi bi-asterisk text-primary"></i></sup></p>
                                             <select class="form-select form-select-sm" name="course_type" aria-label=".form-select-sm" required>
                                                 <option value="Core">Core</option>
                                                 <option value="General">General</option>
@@ -227,7 +227,7 @@
                                             </select>
                                         </div>
                                         <div>
-                                            <p class="mt-2">Assign to course:<sup><i class="bi bi-asterisk text-primary"></i></sup></p>
+                                            <p class="mt-2">Assign to subject:<sup><i class="bi bi-asterisk text-primary"></i></sup></p>
                                             <select class="form-select form-select-sm" id="course-select" aria-label=".form-select-sm" name="course_id" required>
                                             </select>
                                         </div>
@@ -274,14 +274,14 @@
         .then(function(data) {
             var sectionSelect = document.getElementById('section-select');
             sectionSelect.options.length = 0;
-            data.sections.unshift({'id': 0,'section_name': 'Please select a section'})
+            data.sections.unshift({'id': 0,'section_name': 'Please select a stream'})
             data.sections.forEach(function(section, key) {
                 sectionSelect[key] = new Option(section.section_name, section.id);
             });
 
             var courseSelect = document.getElementById('course-select');
             courseSelect.options.length = 0;
-            data.courses.unshift({'id': 0,'course_name': 'Please select a course'})
+            data.courses.unshift({'id': 0,'course_name': 'Please select a subject'})
             data.courses.forEach(function(course, key) {
                 courseSelect[key] = new Option(course.course_name, course.id);
             });

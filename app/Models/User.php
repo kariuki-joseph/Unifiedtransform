@@ -28,7 +28,6 @@ class User extends Authenticatable
         'gender',
         'nationality',
         'phone',
-        'address',
         'county',
         'town',
         'photo',

@@ -43,13 +43,13 @@
                                         </select>
                                     </div>
                                     <div>
-                                        <p class="mt-2">Select course:<sup><i class="bi bi-asterisk text-primary"></i></sup></p>
+                                        <p class="mt-2">Select subject:<sup><i class="bi bi-asterisk text-primary"></i></sup></p>
                                         <select class="form-select" id="course-select" name="course_id">
                                         </select>
                                     </div>
                                     <div class="mt-2">
                                         <p>Exam name<sup><i class="bi bi-asterisk text-primary"></i></sup></p>
-                                        <input type="text" class="form-control" name="exam_name" placeholder="Quiz, Assignment, Mid term, Final, ..." aria-label="Quiz, Assignment, Mid term, Final, ...">
+                                        <input type="text" class="form-control" name="exam_name" placeholder="CAT1, Mid Term 1, End Term 1..." aria-label="CAT1, Mid Term 1, End Term 1...">
                                     </div>
                                     <div class="mt-2">
                                         <label for="inputStarts" class="form-label">Starts<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
@@ -82,7 +82,7 @@
 
             var courseSelect = document.getElementById('course-select');
             courseSelect.options.length = 0;
-            data.courses.unshift({'id': 0,'course_name': 'Please select a course'})
+            data.courses.unshift({'id': 0,'course_name': 'Please select a subject'})
             data.courses.forEach(function(course, key) {
                 courseSelect[key] = new Option(course.course_name, course.id);
             });

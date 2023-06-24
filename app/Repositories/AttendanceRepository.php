@@ -38,7 +38,7 @@ class AttendanceRepository implements AttendanceInterface {
     public function getSectionAttendance($class_id, $section_id, $session_id) {
         try {
             return Attendance::with('student')
-                            ->where('class_id', $class_id)
+		    ->where('class_id', $class_id)
                             ->where('section_id', $section_id)
                             ->where('session_id', $session_id)
                             ->whereDate('created_at', '=', Carbon::today())
@@ -63,7 +63,7 @@ class AttendanceRepository implements AttendanceInterface {
 
     public function getStudentAttendance($session_id, $student_id) {
         try {
-            return Attendance::with(['section','course'])
+            return Attendance::with(['section','course','schoolClass'])
                             ->where('student_id', $student_id)
                             ->where('session_id', $session_id)
                             ->get();

@@ -63,15 +63,10 @@
                                             </tr>
                                             <tr>
                                             </tr>
-                                            <tr>
-                                                <th scope="row">Address:</th>
-                                                <td>{{$teacher->address}}</td>
-                                                <th>Address2:</th>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">City:</th>
+                                            <t<r>
+                                                <th scope="row">County:</th>
                                                 <td>{{$teacher->county}}</td>
-                                                <th>Zip:</th>
+                                                <th>Town:</th>
                                                 <td>{{$teacher->town}}</td>
                                             </tr>
                                             <tr>

@@ -8,12 +8,12 @@
             <div class="row pt-2">
                 <div class="col ps-4">
                     <h1 class="display-6 mb-3">
-                        <i class="bi bi-journal-medical"></i> My Courses
+                        <i class="bi bi-journal-medical"></i> My Subjects
                     </h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">My courses</li>
+                            <li class="breadcrumb-item active" aria-current="page">My subjects</li>
                         </ol>
                     </nav>
                     <h6>Filter list by:</h6>
@@ -39,7 +39,7 @@
                             <table class="table">
                                 <thead>
                                     <tr>
-                                        <th scope="col">Course Name</th>
+                                        <th scope="col">Subject Name</th>
                                         <th scope="col">Class</th>
                                         <th scope="col">Stream</th>
                                         <th scope="col">Actions</th>

@@ -26,7 +26,7 @@
                                     <tr>
                                         <th scope="col">Status</th>
                                         <th scope="col">Date</th>
-                                        <th scope="col">Context</th>
+                                        <th scope="col">Class</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -38,10 +38,9 @@
                                                 @else
                                                     <span class="badge bg-danger">ABSENT</span>
                                                 @endif
-                                                
                                             </td>
                                             <td>{{$attendance->created_at}}</td>
-                                            <td>{{($attendance->section == null)?$attendance->course->course_name:$attendance->section->section_name}}</td>
+                                            <td>{{($attendance->section == null)?$attendance->course->course_name: $attendance->schoolClass->class_name.' '.$attendance->section->section_name}}</td>
                                         </tr>
                                     @endforeach
                                 </tbody>

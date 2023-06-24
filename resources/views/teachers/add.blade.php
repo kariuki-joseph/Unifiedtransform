@@ -32,11 +32,11 @@
                             </div>
                             <div class="col-md-6">
                                 <label for="inputEmail" class="form-label">Email<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
-                                <input type="email" class="form-control" id="inputEmail" name="email" required value="{{old('email')}}">
+                                <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Email" required value="{{old('email')}}">
                             </div>
                             <div class="col-md-6">
                                 <label for="inputPassword" class="form-label">Password<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
-                                <input type="password" class="form-control" id="inputPassword" name="password" required>
+                                <input type="password" class="form-control" id="inputPassword" name="password" placeholder="Password" required>
                             </div>
                             <div class="col-md-6">
                                 <label for="formFile" class="form-label">Photo</label>
@@ -44,25 +44,17 @@
                                 <div id="previewPhoto"></div>
                                 <input type="hidden" id="photoHiddenInput" name="photo" value="">
                             </div>
-                            <!--<div class="col-md-12">
-                                <label for="inputAddress" class="form-label">Address<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
-                                <input type="text" class="form-control" id="inputAddress" name="address" placeholder="634 Main St" required value="{{old('address')}}">
-                            </div>
-                            <div class="col-md-12">
-                                <label for="inputAddress2" class="form-label">Address 2</label>
-
+                           <div class="col-md-4">
+                                <label for="inputCounty" class="form-label">County<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
+                                <input type="text" class="form-control" id="inputCounty" name="county" placeholder="Nakuru" required value="{{old('county')}}">
                             </div>
                             <div class="col-md-4">
-                                <label for="inputCity" class="form-label">City<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
-                                <input type="text" class="form-control" id="inputCity" name="county" placeholder="Dhaka..." required value="{{old('county')}}">
-                            </div>
-                            <div class="col-md-4">
-                                <label for="inputTown" class="form-label">Zip<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
-                                <input type="text" class="form-control" id="inputTown" name="town" required value="{{old('town')}}">
+                                <label for="inputTown" class="form-label">Town<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
+                                <input type="text" class="form-control" id="inputTown" name="town" placeholder="Bahati" required value="{{old('town')}}">
                             </div>
                             <div class="col-md-4">
                                 <label for="inputPhone" class="form-label">Phone<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
-                                <input type="text" class="form-control" id="inputPhone" name="phone" placeholder="+254 7......" required value="{{old('phone')}}">
+                                <input type="text" class="form-control" id="inputPhone" name="phone" placeholder="07123..." required value="{{old('phone')}}">
                             </div>
                             <div class="col-md-4">
                                 <label for="inputGender" class="form-label">Gender<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
@@ -73,7 +65,7 @@
                             </div>
                             <div class="col-md-4">
                                 <label for="inputNationality" class="form-label">Nationality<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
-                                <input type="text" class="form-control" id="inputNationality" name="nationality" placeholder="e.g. Bangladeshi, German, ..." required value="{{old('nationality')}}">
+                                <input type="text" class="form-control" id="inputNationality" value="Kenya" name="nationality" placeholder="Kenya" required value="{{old('nationality')}}">
                             </div>
                             <div class="col-12">
                                 <button type="submit" class="btn btn-sm btn-outline-primary"><i class="bi bi-person-plus"></i> Add</button>

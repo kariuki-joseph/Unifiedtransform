@@ -8,7 +8,7 @@
             <div class="row pt-2">
                 <div class="col ps-4">
                     <h1 class="display-6 mb-3">
-                        <i class="bi bi-sort-numeric-up-alt"></i> Promote Class Section
+                        <i class="bi bi-sort-numeric-up-alt"></i> Promote Classes
                     </h1>
                     <h6>Filter list by:</h6>
                     <div class="mb-4 mt-4">
@@ -32,7 +32,7 @@
                         <table class="table mt-4">
                             <thead>
                                 <tr>
-                                    <th scope="col">Section Name</th>
+                                    <th scope="col">Stream</th>
                                     <th scope="col">Promotion Status</th>
                                     <th scope="col">Actions</th>
                                 </tr>

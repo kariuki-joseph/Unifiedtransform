@@ -20,7 +20,7 @@
                             <table class="table mt-4">
                                 <thead>
                                     <tr>
-                                        <th scope="col">#ID Card Number</th>
+                                        <th scope="col">Admission Number</th>
                                         <th scope="col">First Name</th>
                                         <th scope="col">Last Name</th>
                                         <th scope="col">Previous Class</th>
@@ -79,7 +79,7 @@
         .then(function(data) {
             var sectionSelect = document.getElementById('inputAssignToSection'+index);
             sectionSelect.options.length = 0;
-            data.sections.unshift({'id': 0,'section_name': 'Please select a section'})
+            data.sections.unshift({'id': 0,'section_name': 'Please select a stream'})
             data.sections.forEach(function(section, key) {
                 sectionSelect[key] = new Option(section.section_name, section.id);
             });
